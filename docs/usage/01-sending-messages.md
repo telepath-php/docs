@@ -1,14 +1,10 @@
----
-sidebar_position: 1
----
-
 Sending Messages
 ================
 
-After you've instantiated your bot instance, you can use all the available methods 
+After you have your bot instance, you can use all the available methods 
 documented in the [Telegram Bot API documentation](https://core.telegram.org/bots/api).
 
-Use the `sendMessage` method to send a message:
+I. e. use the `sendMessage` method to send a message:
 ```php
 $bot->sendMessage($chatId, $text);
 ```
@@ -21,5 +17,7 @@ You can use PHP 8's named arguments for this:
 $bot->sendMessage($chatId, $text, parse_mode: 'HTML', disable_notification: true);
 ```
 
+:::note
 This is recommended for every optional argument, since it can happen, that new arguments get
 inserted in between with a new Telegram Bot API version.
+:::
