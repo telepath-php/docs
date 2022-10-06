@@ -24,7 +24,7 @@ $bot->enableCaching(
 
 ## Start a Conversation
 
-To start a conversation you create a class that extends the Conversation class and contains a method with an attached
+To start a conversation create a class that extends the Conversation class and contains a method with an attached
 handler. In this example we are using the [previously](./handlers#defining-your-own-handler) created Greeting handler, 
 that reacts to text messages containing _hey_, _hi_ or _hello_.
 
@@ -41,7 +41,7 @@ class PersonalInfo extends \Telepath\Conversations\Conversation
 
 ## Keep a conversation going
 
-To keep a conversation going you call this `$this->next()` method and pass the name of the next method to call.
+To keep a conversation going call `$this->next()` and pass the name of the next method to call.
 ```php
     #[Greeting]
     public function greeting(Update $update)

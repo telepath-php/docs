@@ -2,7 +2,7 @@ Installation
 ============
 
 :::info
-If you want to use this bot with Laravel, skip to the [Laravel Integration](./02-laravel.md) page.
+If you want to use this bot with Laravel, skip to the [Laravel Integration](./laravel) page.
 :::
 
 This package can be installed via composer:

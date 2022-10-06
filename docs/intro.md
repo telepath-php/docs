@@ -6,15 +6,15 @@ sidebar_position: 1
 Introduction
 ============
 
-Telepath is a modern framework-agnostic libraray to create Telegram Bots in PHP.
+Telepath is a modern framework-agnostic library to create Telegram Bots in PHP.
 
 It stands out by generating a lot of PHP Code automatically from the Telegram Bot API documentation and using modern PHP features like Attributes and Named Parameters.
 
-## Before you start
-
+:::danger Before You Start
 We want to make use of modern PHP all the way but the development of PHP doesn't stop. This means if there will be a feature in a new PHP version that makes sense to use in this package, we will.
 
 So beware of that and only use this library if you're running in a setup where you can easily upgrade to new PHP versions when they get released.
+:::
 
 ## Other libraries
 
