@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Telepath Docs',
-    tagline: 'Telepath is cool',
-    url: 'https://your-docusaurus-test-site.com',
+    title: 'Telepath',
+    tagline: 'Create modern Telegram Bots with PHP.',
+    url: 'https://telepath-php.dev',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/favicon.png',
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -52,7 +52,7 @@ const config = {
             navbar: {
                 title: 'Telepath',
                 logo: {
-                    alt: 'My Site Logo',
+                    alt: 'Telepath',
                     src: 'img/logo.svg',
                 },
                 items: [
@@ -64,8 +64,8 @@ const config = {
                     },
                     {to: '/news', label: 'News', position: 'left'},
                     {
-                        href: 'https://git.tii.tools/tii/telepath',
-                        label: 'GitLab',
+                        href: 'https://github.com/telepath-php/telepath',
+                        label: 'GitHub',
                         position: 'right',
                     },
                 ],
@@ -82,23 +82,23 @@ const config = {
                             },
                         ],
                     },
-                    {
-                        title: 'Community',
-                        items: [
-                            {
-                                label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                            },
-                            {
-                                label: 'Discord',
-                                href: 'https://discordapp.com/invite/docusaurus',
-                            },
-                            {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/docusaurus',
-                            },
-                        ],
-                    },
+                    // {
+                    //     title: 'Community',
+                    //     items: [
+                    //         {
+                    //             label: 'Stack Overflow',
+                    //             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                    //         },
+                    //         {
+                    //             label: 'Discord',
+                    //             href: 'https://discordapp.com/invite/docusaurus',
+                    //         },
+                    //         {
+                    //             label: 'Twitter',
+                    //             href: 'https://twitter.com/docusaurus',
+                    //         },
+                    //     ],
+                    // },
                     {
                         title: 'More',
                         items: [
@@ -108,7 +108,7 @@ const config = {
                             // },
                             {
                                 label: 'GitHub',
-                                href: 'https://git.tii.tools/tii/telepath',
+                                href: 'https://github.com/telepath-php/telepath',
                             },
                         ],
                     },
