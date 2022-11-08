@@ -48,7 +48,7 @@ To keep a conversation going call `$this->next()` and pass the name of the next 
     {
         $this->bot->sendMessage(
             $update->message->chat->id,
-            'Hey, what's your name?'
+            'Hey, what\'s your name?'
         );
     
         $this->next('name');
