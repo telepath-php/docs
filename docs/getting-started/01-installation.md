@@ -13,7 +13,12 @@ This package can be installed via composer:
 
 To be able to interact with Telegram servers you need to create an instance and pass your Telegram Bot API Token:
 ```php
-$bot = new \Telepath\TelegramBot('your api token');
+$bot = new \Telepath\Bot('your api token');
+```
+You can also use the `BotBuilder` class to obtain an instance of the `Bot` class.
+
+```php
+$bot = \Telepath\BotBuilder::token('your api token')->build();
 ```
 
 That's already enough to send messages and other media.
@@ -21,10 +26,18 @@ That's already enough to send messages and other media.
 ### Custom Telegram Bot API Server
 
 If you're using a custom Telegram Bot API Server, you need to pass the URL as an additional parameter to the constructor
-of TelegramBot.
+of `Bot`.
 
 ```php
-$bot = new \Telepath\TelegramBot('your api token', baseUri: 'http://127.0.0.1:8081');
+$bot = new \Telepath\Bot('your api token', baseUri: 'http://127.0.0.1:8081');
+```
+
+When using the `BotBuilder` class, pass the URL as follows:
+
+```php
+$bot = \Telepath\BotBuilder::token('your api token')
+    ->baseUri('http://127.0.0.1:8081')
+    ->build();
 ```
 
 :::caution Important
