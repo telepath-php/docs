@@ -29,14 +29,14 @@ If you're using a custom Telegram Bot API Server, you need to pass the URL as an
 of `Bot`.
 
 ```php
-$bot = new \Telepath\Bot('your api token', baseUri: 'http://127.0.0.1:8081');
+$bot = new \Telepath\Bot('your api token', apiServerUrl: 'http://127.0.0.1:8081');
 ```
 
 When using the `BotBuilder` class, pass the URL as follows:
 
 ```php
 $bot = \Telepath\BotBuilder::token('your api token')
-    ->baseUri('http://127.0.0.1:8081')
+    ->apiServerUrl('http://127.0.0.1:8081')
     ->build();
 ```
 
