@@ -21,18 +21,18 @@ The service provider for your Laravel project automatically gets installed and p
 
 ## Usage
 
-Wherever you need to call a Telegram Bot API method, you can get the Bot instance via Telegrams Service Container. 
+Wherever you need to call a Telegram Bot API method, you can get the `Bot` instance via Telegrams Service Container. 
 
 ```php
-$bot = resolve(\Telepath\TelegramBot::class);
+$bot = resolve(\Telepath\Bot::class);
 ```
 
-This means you can make use of autowiring and request the instance via the __construct method in most places like in 
+This means you can make use of autowiring and request the instance via the `__construct` method in most places like in 
 this example with constructor properties:
 
 ```php
 public function __construct(
-    protected TelegramBot $bot
+    protected Bot $bot
 ) {}
 ```
 
@@ -65,4 +65,4 @@ If you wish to make modifications to the bundled config or routes file you can p
 
 `php artisan vendor:publish`
 
-Select the corresponding telepath-config or telepath-routes tag or alternatively the TelepathServiceProvider for both files.
+Select the corresponding `telepath-config` or `telepath-routes` tag or alternatively the TelepathServiceProvider for both files.

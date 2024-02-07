@@ -7,7 +7,7 @@ But for this to work, we need a CachingInterface.
 
 ## Setup
 
-The `TelegramBot` class has an `enableCaching` method that takes every PSR-6 or PSR-16 compatible CacheInterface.
+The `Bot` class has an `enableCaching` method that takes every PSR-6 or PSR-16 compatible CacheInterface.
 
 :::tip Pro Tip
 We recommend using the [Symfony Cache Component](https://symfony.com/doc/current/components/cache.html) since it has a 
