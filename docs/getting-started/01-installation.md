@@ -18,7 +18,7 @@ $bot = new \Telepath\Bot('your api token');
 You can also use the `BotBuilder` class to obtain an instance of the `Bot` class.
 
 ```php
-$bot = \Telepath\BotBuilder::token('your api token')->build();
+$bot = \Telepath\Facades\BotBuilder::token('your api token')->build();
 ```
 
 That's already enough to send messages and other media.
@@ -35,7 +35,7 @@ $bot = new \Telepath\Bot('your api token', apiServerUrl: 'http://127.0.0.1:8081'
 When using the `BotBuilder` class, pass the URL as follows:
 
 ```php
-$bot = \Telepath\BotBuilder::token('your api token')
+$bot = \Telepath\Facades\BotBuilder::token('your api token')
     ->apiServerUrl('http://127.0.0.1:8081')
     ->build();
 ```
