@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Focus on What Your Bot Should Do',
+    title: 'Focus on Your Bot',
     image: require('@site/static/img/focus-on-your-bot.png').default,
     description: (
       <>
