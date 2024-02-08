@@ -35,11 +35,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/telepath-php/docs',
+          editUrl: 'https://github.com/telepath-php/docs/edit/main',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/telepath-php/docs',
+          editUrl: 'https://github.com/telepath-php/docs/edit/main',
         },
         theme: {
           customCss: './src/css/custom.css',
