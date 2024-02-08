@@ -45,7 +45,7 @@ $bot->handleWebhook();
 This method will transform the data from the webhook into a `Update` and process it automatically.
 
 ### Get information about current webhook
-Telepath offers the command `webhook:info` to retrieve several information about the currently registered webhooked at the Bot API server. You can also call the `getWebhookInfo` method of the `Bot` class to receive the data.
+Telepath offers the command `webhook:info` to retrieve several information about the currently registered webhook at the Bot API server. You can also call the `getWebhookInfo` method of the `Bot` class to receive the data.
 
 ### Delete webhook
 If you want to change the endpoint of your webhook or use the polling method instead of webhooks you must delete the webhook at the Bot API server. To do this you can use the `webhook:delete` command or call the `deleteWebhook` method of the `Bot` class.
