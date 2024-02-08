@@ -32,6 +32,8 @@ To register the webhook Telepath offers the `webhook:set` command. You can speci
 
 For more information of supported options please also have a look into the [Telegram documentation](https://core.telegram.org/bots/api#setwebhook).
 
+Alternatively you can call the `setWebhook` method of the `Bot` class.
+
 You may also want to have a look into the [recommendations from Telegram for the secure usage of webhooks](https://core.telegram.org/bots/webhooks).
 
 ### Handle incoming requests
@@ -43,7 +45,7 @@ $bot->handleWebhook();
 This method will transform the data from the webhook into a `Update` and process it automatically.
 
 ### Get information about current webhook
-Telepath offers the command `webhook:info` to retrieve several information about the currently registered webhooked at the Bot API server.
+Telepath offers the command `webhook:info` to retrieve several information about the currently registered webhooked at the Bot API server. You can also call the `getWebhookInfo` method of the `Bot` class to receive the data.
 
 ### Delete webhook
-If you want to change the endpoint of your webhook or use the polling method instead of webhooks you must delete the webhook at the Bot API server. To do this you can use the `webhook:delete` command.
+If you want to change the endpoint of your webhook or use the polling method instead of webhooks you must delete the webhook at the Bot API server. To do this you can use the `webhook:delete` command or call the `deleteWebhook` method of the `Bot` class.
