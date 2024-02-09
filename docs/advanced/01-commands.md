@@ -19,19 +19,19 @@ There are global options that are available for all commands. They can be specif
 
 ### Commands
 
-**`./telepathy bot:info`**
+#### `./telepathy bot:info`
 
 This corresponds to the [getMe](https://core.telegram.org/bots/api#getme) API function and will return information about the bot. You can test your API token with this command.
 
-**`./telepathy server:close`**
+#### `./telepathy server:close`
 
 This corresponds to the [close](https://core.telegram.org/bots/api#close) API function and will close the bot instance if you want to move from one local server to another.
 
-**`./telepathy server:logout`**
+#### `./telepathy server:logout`
 
 This corresponds to the [logout](https://core.telegram.org/bots/api#logout) API function and will log out the bot from the cloud Bot API server before moving it to a local server.
 
-**`./telepathy webhook:delete`**
+#### `./telepathy webhook:delete`
 
 This corresponds to the [deleteWebhook](https://core.telegram.org/bots/api#deletewebhook) API function and will delete the webhook if you want to switch back to long polling.
 
@@ -39,11 +39,11 @@ This corresponds to the [deleteWebhook](https://core.telegram.org/bots/api#delet
 |----------------------------------|---------------------------|
 | `--drop-pending-updates` or `-d` | Drop all pending updates. |
 
-**`./telepathy webhook:info`**
+#### `./telepathy webhook:info`
 
 This corresponds to the [getWebhookInfo](https://core.telegram.org/bots/api#getwebhookinfo) API function and will return the current webhook status.
 
-**`./telepathy webhook:set`**
+#### `./telepathy webhook:set`
 
 This corresponds to the [setWebhook](https://core.telegram.org/bots/api#setwebhook) API function and will set the webhook to the specified URL.
 
@@ -66,7 +66,7 @@ This corresponds to the [setWebhook](https://core.telegram.org/bots/api#setwebho
 ## Laravel Commands
 If you're using the `telepath/laravel` package you can use the following `php artisan` commands:
 
-**`php artisan telepath:fetch`**
+####`php artisan telepath:fetch`
 
 Fetches Telegram updates periodically (using [long polling](https://en.wikipedia.org/wiki/Push_technology#Long_polling)) and dispatches them to the Laravel application.
 
@@ -78,7 +78,7 @@ Fetches Telegram updates periodically (using [long polling](https://en.wikipedia
 Remember to restart this command after any code changes so they take effect.
 :::
 
-**`php artisan telepath:install`**
+#### `php artisan telepath:install`
 
 Installs the package. This command publishes the configuration file, ensures the existence of the `app/Telepath` folder and appends the possible environment variables to your .env file. 
 
@@ -87,7 +87,7 @@ Installs the package. This command publishes the configuration file, ensures the
 | `--force` | `-f`     | Overwrite existing files |
 
 
-**`php artisan telepath:set-webhook`**
+#### `php artisan telepath:set-webhook`
 
 | Argument | Optional? | Description                                |
 |----------|:----------|--------------------------------------------|

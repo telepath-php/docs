@@ -19,6 +19,14 @@ This package can be installed via composer:
 
 The service provider for your Laravel project automatically gets installed and put in place.
 
+To publish the configuration file, automatically add environment variables in your .env file and create the default Telepath directory inside your `app/` folder run the following command:
+
+`php artisan telepath:install`
+
+This command asks for your Telegram Bot Token and adds it to your .env file. You may leave that empty and add it later yourself.
+
+For more info look into the [Commands section](../advanced/01-commands.md#php-artisan-telepathinstall).
+
 ## Usage
 
 Wherever you need to call a Telegram Bot API method, you can get the `Bot` instance via Telegrams Service Container. 
