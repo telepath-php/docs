@@ -63,7 +63,7 @@ To keep a conversation going call `$this->next()` and pass the name of the next 
 :::tip Pro Tip
 By default the next method assumes you want to stay in the current class. But it is also possible to pass a class name
 as a second argument.
-:::"
+:::
 
 ## End a Conversation
 
