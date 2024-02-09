@@ -91,6 +91,6 @@ the CacheAdapter. This means you can easily save arbitrary information as proper
 As long as they're not private they get saved and restored as soon as the conversation continues.
 
 :::caution Important
-It is important that you call `$this->next()` after setting the state you want to remember. If you change a class
+It is important that you call `$this->next()` **after** setting the state you want to remember. If you change a class
 property afterwards this change gets not reflected in the cached state.
 :::
