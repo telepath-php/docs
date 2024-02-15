@@ -1,7 +1,7 @@
 Middleware
 ==========
 
-You can use middleware classes to manipulate `Update`s before they are processed or to prevent their processing completely. For example, a middleware can be used to check if the user is allowed to execute a bot command. If the user is not allowed, the middleware can prohibit the execution of the bot command before it is even called.
+You can use middleware classes to manipulate Updates before they are processed or to prevent their processing completely. For example, a middleware can be used to check if the user is allowed to execute a bot command. If the user is not allowed, the middleware can prohibit the execution of the bot command before it is even called.
 
 To use middlewares, you must first create a middleware class and then assign it to one or more bot commands by using the `Middleware` attribute.
 
@@ -17,7 +17,7 @@ The first parameter is an instance of the incoming `Update`.
 
 The second parameter is a callback function which must be called to pass the `Update` to the next middleware and finally to the corresponding `Update` handler. To prevent the `Update` from being processed any further, the middleware must return without calling this callback function. If the processing should continue, you need to call `return $next($update);`, pass the `Update` and return what comes back.
 
-:::tip Pro Tip!
+:::tip Pro Tip
 You can even modify the `Update` before passing it on. This way, you can manipulate the `Update` to your liking.
 :::
 
