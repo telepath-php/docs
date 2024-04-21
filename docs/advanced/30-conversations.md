@@ -25,7 +25,7 @@ $bot->enableCaching(
 ## Start a Conversation
 
 To start a conversation create a class that extends the Conversation class and contains a method with an attached
-handler. In this example we are using the [previously](./handlers#defining-your-own-handler) created Greeting handler, 
+handler. In this example we are using the [previously](../usage/20-handlers.md#defining-your-own-handler) created Greeting handler, 
 that reacts to text messages containing _hey_, _hi_ or _hello_.
 
 ```php
