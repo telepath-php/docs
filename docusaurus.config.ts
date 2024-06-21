@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -70,6 +70,11 @@ const config: Config = {
           position: 'left'
         },
         {
+          href: 'https://t.me/TelepathSupport',
+          label: 'Telegram Support Group',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/telepath-php/telepath',
           label: 'GitHub',
           position: 'right',
@@ -108,6 +113,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
+            {
+              label: 'Telegram Support Group',
+              href: 'https://t.me/TelepathSupport',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/telepath-php/telepath',
