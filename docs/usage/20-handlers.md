@@ -55,16 +55,22 @@ As long as the class shown above can be found inside the path you specified in t
 | Handler             | Gets called if the Update contains...                             |
 |:--------------------|:------------------------------------------------------------------|
 | Message             | message                                                           |
-| _MessageType_       | message of a specified type i. e. a photo or a dice               |
-| _Text_              | message of type text that matches the specified criteria          |
+| _MessageType_       | message of a specified type i. e. a photo or a dice                |
+| _Text_              | message of type text that matches the specified criteria           |
 | _Command_           | message of type text containing a command                         |
 | EditedMessage       | edited_message                                                    |
 | ChannelPost         | channel_post                                                      |
 | EditedChannelPost   | edited_channel_post                                               |
+| BusinessConnection  | business_connection                                               |
+| BusinessMessage     | business_message |
+| EditedBusinessMessage | edited_business_message |
+| DeletedBusinessMessages | deleted_business_messages |
+| MessageReaction | message_reaction |
+| MessageReactionCount | message_reaction_count |
 | InlineQuery         | inline_query                                                      |
 | ChosenInlineResult  | chosen_inline_result                                              |
 | CallbackQuery       | callback_query                                                    |
-| _CallbackQueryData_ | callback_query including data that matches the specified criteria |
+| _CallbackQueryData_ | callback_query including data that matches the specified criteria  |
 | ShippingQuery       | shipping_query                                                    |
 | PreCheckoutQuery    | pre_checkout_query                                                |
 | Poll                | poll                                                              |
@@ -72,6 +78,8 @@ As long as the class shown above can be found inside the path you specified in t
 | MyChatMember        | my_chat_member                                                    |
 | ChatMember          | chat_member                                                       |
 | ChatJoinRequest     | chat_join_request                                                 |
+| ChatBoost | chat_boost |
+| RemovedChatBoost | removed_chat_boost |
 
 ## Defining your own handler
 

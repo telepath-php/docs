@@ -5,25 +5,23 @@ There are two ways of receiving updates, like incoming messages and interactions
 
 ## Polling
 
-Your bot polls repeatedly the Bot API server and asks if there are new updates. If there is nothing new the request 
-waits until it timeouts or a new `Update` becomes available. 
+Your bot polls repeatedly the Bot API server and asks if there are new updates. If there is nothing new the request
+waits until it timeouts or a new `Update` becomes available. (That's called [long polling](https://en.wikipedia.org/w/index.php?title=Push_technology#Long_polling)
 
-Telepath provides an implementation of this polling feature in the `handlePolling` method of the `Bot` class.
+Telepath provides an implementation of this long polling feature in the `handlePolling` method of the `Bot` class.
 
 ```php
 $bot->handlePolling();
 ```
-With optional parameters you can also define if you only want to received `Update` of a certain type and define a timeout.
+With optional parameters you can also define if you only want to received Updates of a certain type and overwrite the timeout.
 
 :::caution Important
 Beware that this method call will never return.
 :::
 
-Keep in mind, that the delayed polling of updates will also cause your bot reacting less responsive. If you need fast and real-time answers from your bot we recommend using webhooks.
-
 ## Webhook
 
-A webhook is a HTTPS POST request from the Bot API server to your bot with the data of a new `Update`. Each `Update` will result in an request the webserver of your bot must work on. 
+A webhook is a HTTPS POST request from the Bot API server to your bot with the data of a new `Update`. Each `Update` will result in an request the webserver of your bot must work on.
 
 ### Register webhook
 Webhooks must be registered at the Bot API server and require a webserver which can receive HTTPS requests.
