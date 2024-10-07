@@ -1,0 +1,14 @@
+{
+    "name": "telepath-php/docs",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tii",
+            "email": "mail@tii.one"
+        }
+    ],
+    "require-dev": {
+        "deployer/deployer": "^7.4"
+    }
+}
