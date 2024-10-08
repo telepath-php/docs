@@ -1,6 +1,7 @@
 name: deploy
 
 on:
+  workflow_dispatch:
   push:
     branches: [master]
 
@@ -9,6 +10,10 @@ concurrency: production_environment
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    environment:
+      name: production
+      url: https://telepath-php.dev
 
     steps:
       - uses: actions/checkout@v3
