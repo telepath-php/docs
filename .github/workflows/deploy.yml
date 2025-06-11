@@ -8,26 +8,37 @@ on:
 concurrency: production_environment
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Docusaurus
+        run: |
+          npm ci
+          npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/
+
+
   deploy:
     runs-on: ubuntu-latest
 
     environment:
-      name: production
-      url: https://telepath-php.dev
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+
+    needs: build
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: "8.1"
-
-      - name: Install dependencies
-        run: composer install
-
-      - name: Deploy
-        uses: deployphp/action@v1
-        with:
-          private-key: ${{ secrets.PRIVATE_KEY }}
-          dep: deploy
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
